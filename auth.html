@@ -1,0 +1,16 @@
+<h1>Войти в существующий аккаунт :</h1>
+<form id = "auth" action = "regs.php" method = "POST" >	
+	Введите ваш логин<br>
+	<input type = "text" name  = "login" class = "vvod"><br>
+	<br>
+	Введите ваш пароль<br>
+	<input type = "password" name  = "password" class = "vvod"><br>
+	<br>
+	<button type = "submit">Войти</button>
+	<br>
+	<input type = "hidden" name = "auth" value = "2"><br>
+	<span class = "errorAuth"><?=@$errorAuth;?></span>
+	<br>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "send.js"></script>

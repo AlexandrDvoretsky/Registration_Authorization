@@ -1,0 +1,25 @@
+<h1>Регистрация :</h1>
+<form id = "reg" action = "regs.php" method = "POST" >	
+	Введите ваш логин<br>
+	<input type = "text" name  = "login" class = "vvod"><br>
+	<br>
+	Введите ваш пароль<br>
+	<input type = "password" name  = "password" class = "vvod"><br>
+	<br>
+	Подтвердите ваш пароль<br>
+	<input type = "password" name = "confirm_password" class = "vvod"><br>
+	<br>
+	Введите вашу эл. адрес<br>
+	<input type = "text" name = "email" class = "vvod"><br>
+	<br>
+	Введите ваше имя<br>
+	<input type = "text" name  = "name" class = "vvod"><br>
+	<br>
+	<button type = "submit">Зарегистрироваться</button>
+	<br>
+	<input type = "hidden" name = "reg" value = "1"><br>
+	<span class = "errorReg"><?=@$error;?></span>
+	<br>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "send.js"></script>
